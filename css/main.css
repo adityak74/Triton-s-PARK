@@ -299,3 +299,11 @@ body {
     background-color: #c62828;
 }
 
+#maindiv
+{
+     border: 1px solid black;
+    margin top: 70 px;
+    margin bottom:70 px;
+    padding:70 px;
+}
+
