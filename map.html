@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/main.css"/>
+        <title></title>
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    
+        $(document).ready(function() {
+            $('td').hover( function() {
+                    $(this).css("background-color", "red");
+                    console.log($(this).attr('id'));
+            }); 
+
+            $('td').mouseleave( function() {
+                $(this).css("background-color", "#7FFF00");// or whatever
+            });
+    })
+    
+    </script>
+    <body>
+        <table id="mytable">
+            <thead>
+                <thcolspan="70">Eight Blocks!</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="pl1"></td>
+                    <td id="pl2"></td>
+                    <td id="pl3"></td>
+                    <td id="pl4"></td>
+                </tr>
+                <tr>
+                    <td id="pl5"></td>
+                    <td id="pl6"></td>
+                    <td id="pl7"></td>
+                    <td id="pl8"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </body>
+</html>
