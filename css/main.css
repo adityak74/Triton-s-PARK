@@ -287,3 +287,9 @@ width: 100px;
 border:2px solid #7FFF00;
 background-color:#7FFF00;
 }
+
+h1,h2,h3,h4,h5,h6,h7,h8,h9 {
+    font-style: normal
+    font-size:300%
+    font-weight:900;
+}
