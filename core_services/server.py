@@ -211,6 +211,7 @@ def appRequest(p_requester,p_reqtype,p_deviceid,p_carNum):
 				g_sessionStatus["totalAmt"] = (int)(l_total * PARKING_BASIC_PAY)
 				pubnub.publish(channel=g_smartMeter[p_deviceid][0], message=g_sessionStatus)
 				del g_smartMeter[p_deviceid]
+				pubnub.publish(channel='parkingapp-resp', message=g_parkingStatus)
 		else:
 			pass
 
