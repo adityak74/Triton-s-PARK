@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body style="padding: 30px;">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+<!-- <img src="img/about_triton.jpg" alt="About Triton-s-PARK" style="width:1205px; height: 505px; background-color: #fff;" > -->
+
+        <img src="img/parking_logo.png" style="width:105px; height: 105px;">
+        <h1><center><font color="yellow">Autonomous precision tracking/billing</center></h1></font>
+        <center><img src="img/Tracking.png" style="width:505px; height: 605px;"></center>
+        <ol>
+        <h3>
+        <font color="white">
+        <font-size="32px">
+        <li>A cheap ultrasonic or light sensor (HC-SR04 for $2) detects the movements of cars going in and out of a parking slot. Signals got sent out whenever there is a change (car coming in).</li>
+        <li>A controller board was hooked up to multiple (10 to 15) sensors receives the signals and establishes communication channel(s) with PubNub service. One communication channel for each sensor identifiable by sensor ID.</li>
+        <li>Pubnub, upon receipt of updates from the controller board will issue updates to the server correspondingly</li>
+        <li>Server receives updates and perform calculations including but not limitted to slot status verification, start/stop time counter for the slot, calculate the amount of money to be charged, etc. (more details in the business model section) Finally, server publish the update of all fields to PubNub via the channels for mobile app users.</li>
+        <li>PubNub receives update, and forward to the mobile clients accordingly.</li>
+        <li>Mobile client (Cordova powered) receives update, parse and display data accordingly.</li>
+        </h3>
+        </ol>
+
+        <h2><font color="yellow">WHY PUBNUB ?</h2></font>
+        <ul>
+        <h3>
+        <li>Pubnub is affordable and HIPAA compliant!</li>
+        <li>Light-weight and supports unlimited channels created dynamically</li>
+        <li>Automatically manages dropped connections, firewalls, connection switching, etc to ensure reliable real-time communication</li>
+        </h3>
+        </ul>
+
+        <h2><font color="yellow">WHY A PARKING MANAGEMENT SERVER ?</h2></font>
+        <ul>
+        <h3>
+
+        <li>To scale better as school develops</li>
+        <li>To integrate better with existing and future technologies</li>
+        <li>To support more models</li>
+        </h3>
+        </ul>
+
+
+        
+        
