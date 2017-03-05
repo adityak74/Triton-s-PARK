@@ -1,7 +1,7 @@
 # Triton-s-PARK
-* Demo video: tba
-* APK file (for Android): tba
-* Github repository: tba
+* Demo video: https://www.youtube.com/watch?v=KXEeFLMeUOM
+* APK file (for Android): https://github.com/adityak74/Triton-s-PARK/blob/master/Triton-s-PARK.apk
+* Github repository: https://github.com/adityak74/Triton-s-PARK
 
 ## 1. Inspiration
 
